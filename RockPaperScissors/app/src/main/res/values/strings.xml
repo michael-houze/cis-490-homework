@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rock, Paper, Scissors</string>
+    <string name="edit_message">Edit Message Here</string>
+    <string name="hello_world">Play Rock, Paper, Scissors</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_wins">Your Wins: 0</string>
+    <string name="opponent_wins">Opponent Wins: 0</string>
+    <string name="user_throw_header">Make Your Throw:</string>
+    <string name="opponent_throw_header">Opponent Throw:</string>
+
+</resources>
