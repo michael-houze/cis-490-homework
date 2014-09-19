@@ -10,9 +10,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
+// Class: ResultActivity
+// Descr: This class represents the logic of the ResultActivity, in which
+//        the computer makes its Rock,Paper,Scissors selection, it is compared
+//        to the user selection and the result is displayed.
 public class ResultsActivity extends Activity {
 
+    // Method: onCreate
+    // Descri: Calls the logic that determines the winner of the Rock, Paper, Scissors
+    //         match and outputs the results
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +38,7 @@ public class ResultsActivity extends Activity {
         RockPaperScissorsAI player2 = new RockPaperScissorsAI();
         RockPaperScissorType player2Choice = player2.play();
 
-        //set picture
+        // Displays the picture that correlates with the computer selection
         ImageView imageComputer = (ImageView)findViewById(R.id.imageComputer);
         if(player2Choice==RockPaperScissorType.ROCK){
             imageComputer.setImageResource(R.drawable.rock);
@@ -42,11 +48,12 @@ public class ResultsActivity extends Activity {
             imageComputer.setImageResource(R.drawable.scissors);
         }
 
-        //set result
+        //Displays the text of the results of the match
         String result = RockPaperScissorsUtil.eval(player1Choice,player2Choice);
         TextView textView = (TextView)findViewById(R.id.textResult);
         textView.setText(result);
 
+        //Sets button to close the results activity
         Button button = (Button) findViewById(R.id.btnAgain);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,26 +63,4 @@ public class ResultsActivity extends Activity {
         });
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.results, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

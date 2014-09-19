@@ -8,9 +8,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
-
+// Class: MainActivity
+// Descr: This class represents the UI logic of the MainActivity,
+//        where the user makes their Rock,Paper,Scissors selection.
 public class MainActivity extends Activity implements View.OnClickListener{
 
+    // Method: onCreate
+    // Descri: Creates the event listeners that will wait for user input
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,29 +30,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
         imageViewScissors.setOnClickListener(this);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
+    // Method: onClick
+    // Descri: Creates an intent that will direct user to ResultsActivity,
+    //         along with user selection
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(this,ResultsActivity.class);

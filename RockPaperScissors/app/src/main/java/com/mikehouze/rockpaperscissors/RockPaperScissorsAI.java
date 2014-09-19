@@ -3,9 +3,9 @@ package com.mikehouze.rockpaperscissors;
 import java.util.Date;
 import java.util.Random;
 
-/**
- * Created by Michael on 9/18/2014.
- */
+// Class: RockPaperScissorsAI
+// Descr: This class represents the logic behind creating the random
+//        computer choice in a game of Rock, Paper, Scissors.
 public class RockPaperScissorsAI {
     private static int counter=0;
     public RockPaperScissorType play(){

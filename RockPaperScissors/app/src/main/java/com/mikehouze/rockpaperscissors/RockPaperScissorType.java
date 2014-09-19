@@ -1,8 +1,8 @@
 package com.mikehouze.rockpaperscissors;
 
-/**
- * Created by Michael on 9/18/2014.
- */
+//  Enum: RockPaperScissorType
+// Descr: This enum represents the three possible choices for
+//        a Rock, Paper, Scissors game.
 public enum RockPaperScissorType {
     ROCK("Rock"), PAPER("Paper"), SCISSORS("Scissors");
     private String value;

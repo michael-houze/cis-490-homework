@@ -1,10 +1,10 @@
 package com.mikehouze.rockpaperscissors;
 
-/**
- * Created by Michael on 9/18/2014.
- */
+// Class: RockPaperScissorsUtil
+// Descr: This class represents the logic behind determining the winner of
+//        a Rock, Paper, Scissors game given the choices of both players.
 public class RockPaperScissorsUtil {
-    public static final String INPUT_TYPE = "com.wesleyreisz.rockpaperscissors.inputType";
+    public static final String INPUT_TYPE = "com.mikehouze.rockpaperscissors.inputType";
 
     public static String eval(RockPaperScissorType player1Choice, RockPaperScissorType player2Choice){
         if(player1Choice==player2Choice){
