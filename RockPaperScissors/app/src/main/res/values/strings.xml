@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_win_lose">WinLoseActivity</string>
     <string name="play_again">Play Again</string>
+    <string name="main_header">Pick Your Throw</string>
 
 </resources>
