@@ -51,7 +51,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(this,WinLoseActivity.class);
+        Intent intent = new Intent(this,ResultsActivity.class);
         intent.putExtra(RockPaperScissorsUtil.INPUT_TYPE,view.getId());
         startActivity(intent);
     }
