@@ -12,24 +12,36 @@
     >
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageRock"
         android:src="@drawable/rock"
         />
-    <ImageView
-        android:layout_width="wrap_content"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imagePaper"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/imageRock"
-        android:src="@drawable/paper"
-        />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageScissors"
-        android:layout_below="@id/imagePaper"
-        android:src="@drawable/scissors"
-        />
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagePaper"
+            android:src="@drawable/paper"
+            android:layout_below="@id/imageRock"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageScissors"
+            android:src="@drawable/scissors"
+            android:layout_alignBottom="@id/imagePaper"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            />
+        </LinearLayout>
 
 </RelativeLayout>
