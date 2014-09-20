@@ -14,7 +14,7 @@
         android:id="@+id/textHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/large_header_padding"
+        android:paddingTop="@dimen/no_padding"
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
         android:textSize="@dimen/large_message_font"
@@ -27,8 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textHeader"
-        android:paddingTop="@dimen/activity_horizontal_margin"
-        android:paddingBottom="@dimen/large_results_image_padding"
+        android:paddingTop="@dimen/no_padding"
+        android:paddingBottom="@dimen/no_padding"
         />
 
     <TextView
@@ -37,8 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageComputer"
         android:layout_centerHorizontal="true"
-        android:paddingBottom="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/large_results_text_padding"
+        android:paddingBottom="@dimen/no_padding"
+        android:paddingTop="@dimen/no_padding"
         android:fontFamily="sans-serif"
         android:textSize="@dimen/large_message_font"
         />
