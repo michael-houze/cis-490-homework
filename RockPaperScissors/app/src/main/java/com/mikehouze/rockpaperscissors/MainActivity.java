@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 
 // Class: MainActivity
@@ -17,6 +18,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
     // Descri: Creates the event listeners that will wait for user input
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

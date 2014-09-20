@@ -9,27 +9,28 @@
     android:gravity="center"
     >
 
-    <ImageView
-        android:id="@+id/imageRock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rock"
-        />
-
     <LinearLayout
         android:id="@+id/bottomRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/imageRock"
         android:gravity="center"
         >
+
+        <ImageView
+            android:id="@+id/imageRock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/no_padding"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:src="@drawable/rock"
+            />
 
         <ImageView
             android:id="@+id/imagePaper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/no_padding"
+            android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:src="@drawable/paper"
             />
@@ -53,7 +54,7 @@
         android:layout_below="@id/bottomRow"
         android:gravity="center"
         android:fontFamily="sans-serif-light"
-        android:textSize="@dimen/large_message_font"
+        android:textSize="@dimen/normal_message_font"
         android:text="@string/main_header"
         />
 
