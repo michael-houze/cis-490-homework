@@ -15,9 +15,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/large_header_padding"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
-        android:textSize="@dimen/large_message_font"
+        android:textSize="@dimen/normal_message_font"
         android:text="@string/computer_plays"
         />
 
@@ -38,9 +39,9 @@
         android:layout_below="@id/imageComputer"
         android:layout_centerHorizontal="true"
         android:paddingBottom="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/large_results_text_padding"
+        android:paddingTop="@dimen/activity_horizontal_margin"
         android:fontFamily="sans-serif"
-        android:textSize="@dimen/large_message_font"
+        android:textSize="@dimen/normal_message_font"
         />
 
     <Button
@@ -49,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:fontFamily="sans-serif-light"
-        android:textSize="@dimen/large_button_font"
+        android:textSize="@dimen/normal_button_font"
         android:text="@string/play_again"
         />
 

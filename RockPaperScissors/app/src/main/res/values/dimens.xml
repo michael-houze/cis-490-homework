@@ -11,4 +11,5 @@
     <dimen name="large_message_font">60sp</dimen>
     <dimen name="normal_message_font">40sp</dimen>
     <dimen name="large_button_font">40sp</dimen>
+    <dimen name="normal_button_font">30sp</dimen>
 </resources>
