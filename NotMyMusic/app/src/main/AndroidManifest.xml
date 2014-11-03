@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.michaelahouze.notmymusic.SongDetailActivity"
+            android:label="@string/title_activity_song_detail"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name="com.michaelahouze.notmymusic.AddActivity"
+            android:label="@string/title_activity_add"
+            android:parentActivityName=".MainActivity">>
+        </activity>
     </application>
 
 </manifest>
